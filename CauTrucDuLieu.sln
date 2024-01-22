@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.34031.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanhSachLienKetDon", "DanhSachLienKetDon\DanhSachLienKetDon.csproj", "{367E507E-34B6-40F0-B148-6051A8999F89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTap2_DSLKDon", "BaiTap2_DSLKDon\BaiTap2_DSLKDon.csproj", "{26EB56A9-B9C1-465E-8BE4-BC69AE3FE54B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NganXep", "NganXep\NganXep.csproj", "{D335F28C-B2FF-40E6-82F7-54628D5D54AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{367E507E-34B6-40F0-B148-6051A8999F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{367E507E-34B6-40F0-B148-6051A8999F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{367E507E-34B6-40F0-B148-6051A8999F89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26EB56A9-B9C1-465E-8BE4-BC69AE3FE54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26EB56A9-B9C1-465E-8BE4-BC69AE3FE54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26EB56A9-B9C1-465E-8BE4-BC69AE3FE54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26EB56A9-B9C1-465E-8BE4-BC69AE3FE54B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D335F28C-B2FF-40E6-82F7-54628D5D54AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D335F28C-B2FF-40E6-82F7-54628D5D54AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D335F28C-B2FF-40E6-82F7-54628D5D54AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D335F28C-B2FF-40E6-82F7-54628D5D54AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

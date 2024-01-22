@@ -116,6 +116,38 @@ namespace DanhSachLienKetDon
             }
         }
 
+        //tim nut co gia tri lon nhat
+        public Node findMax()
+        {
+            Node max = Head;
+            Node p = Head.Next;
+            while (p != null)
+            {
+                if (p.Info > max.Info)
+                {
+                    max = p;
+                }
+                p = p.Next;
+            }
+            return max;
+        }
+
+        //tinh gia tri trung binh cac nut cua danh sach
+        public float Avg()
+        {
+            float sum = 0;
+            int count = 0;
+            Node p = Head;
+            while (p != null)
+            {
+                sum += p.Info;
+                count++;
+
+                p = p.Next;
+            }
+            return sum / count;
+        }
+
         //phuong thuc duyet danh sach (Xuat danh sach)
         public void ProcessList() {
             Node p = Head;
@@ -154,6 +186,10 @@ namespace DanhSachLienKetDon
             l.DeleteNode(x);
             Console.WriteLine("\nDanh sach lien ket sau khi xoa nut co gia tri x:");
             l.ProcessList();
+
+
+            Console.WriteLine($"\nNut co gia tri lon nhat: {l.findMax().Info}");
+            Console.WriteLine($"\nGia tri trung binh cac nut: {l.Avg()}");
 
 
             Console.ReadLine();
