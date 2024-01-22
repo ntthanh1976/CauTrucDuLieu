@@ -89,6 +89,33 @@ namespace DanhSachLienKetDon
             }
         }
 
+        //phuong thuc xoa nut co gia x
+        public void DeleteNode(int x)
+        {
+            if (Head != null) //danh sach co phan tu
+            {
+                Node p = Head;
+                Node q = null; //nut tam de xac dinh nut truoc p
+                //duyet danh sach de tim nut co gia tri can xoa
+                while (p != null && p.Info != x)
+                {
+                    q = p;
+                    p = p.Next;
+                }
+                //xoa nut p
+                if (p != null) //tim thay nut can xoa
+                {
+                    if (p == Head)
+                        DeleteHead();
+                    else
+                    {
+                        q.Next = p.Next;
+                        p.Next = null;
+                    }
+                }    
+            }
+        }
+
         //phuong thuc duyet danh sach (Xuat danh sach)
         public void ProcessList() {
             Node p = Head;
@@ -105,11 +132,11 @@ namespace DanhSachLienKetDon
         static void Main(string[] args)
         {
             SingleLinkList l = new SingleLinkList();
-            // NhapDanhSach(l);
-            l.AddHead(6);
-            l.AddHead(5);
-            l.AddHead(7);
-            l.AddLast(9);
+            NhapDanhSach(l);
+            //l.AddHead(6);
+            //l.AddHead(5);
+            //l.AddHead(7);
+            //l.AddLast(9);
             Console.WriteLine("Danh sach lien ket duoc tao:");
             l.ProcessList();
            
@@ -121,6 +148,14 @@ namespace DanhSachLienKetDon
             l.DeleteLast();
             Console.WriteLine("\nDanh sach lien ket sau khi xoa nut cuoi:");
             l.ProcessList();
+
+            Console.Write("\nNhap gia x can xoa:");
+            int x = int.Parse(Console.ReadLine());
+            l.DeleteNode(x);
+            Console.WriteLine("\nDanh sach lien ket sau khi xoa nut co gia tri x:");
+            l.ProcessList();
+
+
             Console.ReadLine();
 
         }
